@@ -12,6 +12,7 @@
 		913A13AE1F7DE5280021EC02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913A13AC1F7DE5280021EC02 /* Main.storyboard */; };
 		913A13B01F7DE5280021EC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913A13AF1F7DE5280021EC02 /* Assets.xcassets */; };
 		913A13B31F7DE5280021EC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913A13B11F7DE5280021EC02 /* LaunchScreen.storyboard */; };
+		91FEF3451F848BC4001BACDE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FEF3441F848BC4001BACDE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		913A13AF1F7DE5280021EC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		913A13B21F7DE5280021EC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		913A13B41F7DE5280021EC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91FEF3441F848BC4001BACDE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "Simpsons Book/DetailViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		913A139C1F7DE5260021EC02 = {
 			isa = PBXGroup;
 			children = (
+				91FEF3441F848BC4001BACDE /* DetailViewController.swift */,
 				913A13A71F7DE5280021EC02 /* Simpsons Book */,
 				913A13A61F7DE5280021EC02 /* Products */,
 			);
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91FEF3451F848BC4001BACDE /* DetailViewController.swift in Sources */,
 				913A13AB1F7DE5280021EC02 /* ViewController.swift in Sources */,
 				913A13A91F7DE5280021EC02 /* AppDelegate.swift in Sources */,
 			);
