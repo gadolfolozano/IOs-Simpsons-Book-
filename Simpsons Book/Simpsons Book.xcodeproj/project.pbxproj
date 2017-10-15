@@ -13,6 +13,10 @@
 		913A13B01F7DE5280021EC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913A13AF1F7DE5280021EC02 /* Assets.xcassets */; };
 		913A13B31F7DE5280021EC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913A13B11F7DE5280021EC02 /* LaunchScreen.storyboard */; };
 		91FEF3451F848BC4001BACDE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FEF3441F848BC4001BACDE /* DetailViewController.swift */; };
+		91FEF34B1F85EF03001BACDE /* Simpson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FEF34A1F85EF03001BACDE /* Simpson.swift */; };
+		91FEF34E1F92F2B4001BACDE /* homersimpson.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FEF34D1F92EF6C001BACDE /* homersimpson.png */; };
+		91FEF3511F93C045001BACDE /* marge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91FEF34F1F93C017001BACDE /* marge.jpg */; };
+		91FEF3521F93C05C001BACDE /* burns.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91FEF3501F93C017001BACDE /* burns.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +27,11 @@
 		913A13AF1F7DE5280021EC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		913A13B21F7DE5280021EC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		913A13B41F7DE5280021EC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91FEF3441F848BC4001BACDE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "Simpsons Book/DetailViewController.swift"; sourceTree = "<group>"; };
+		91FEF3441F848BC4001BACDE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		91FEF34A1F85EF03001BACDE /* Simpson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simpson.swift; sourceTree = "<group>"; };
+		91FEF34D1F92EF6C001BACDE /* homersimpson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homersimpson.png; sourceTree = "<group>"; };
+		91FEF34F1F93C017001BACDE /* marge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marge.jpg; sourceTree = "<group>"; };
+		91FEF3501F93C017001BACDE /* burns.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = burns.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +48,6 @@
 		913A139C1F7DE5260021EC02 = {
 			isa = PBXGroup;
 			children = (
-				91FEF3441F848BC4001BACDE /* DetailViewController.swift */,
 				913A13A71F7DE5280021EC02 /* Simpsons Book */,
 				913A13A61F7DE5280021EC02 /* Products */,
 			);
@@ -57,14 +64,27 @@
 		913A13A71F7DE5280021EC02 /* Simpsons Book */ = {
 			isa = PBXGroup;
 			children = (
+				91FEF3491F85EDBF001BACDE /* images */,
+				91FEF3441F848BC4001BACDE /* DetailViewController.swift */,
 				913A13A81F7DE5280021EC02 /* AppDelegate.swift */,
 				913A13AA1F7DE5280021EC02 /* ViewController.swift */,
 				913A13AC1F7DE5280021EC02 /* Main.storyboard */,
+				91FEF34A1F85EF03001BACDE /* Simpson.swift */,
 				913A13AF1F7DE5280021EC02 /* Assets.xcassets */,
 				913A13B11F7DE5280021EC02 /* LaunchScreen.storyboard */,
 				913A13B41F7DE5280021EC02 /* Info.plist */,
 			);
 			path = "Simpsons Book";
+			sourceTree = "<group>";
+		};
+		91FEF3491F85EDBF001BACDE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				91FEF3501F93C017001BACDE /* burns.jpg */,
+				91FEF34F1F93C017001BACDE /* marge.jpg */,
+				91FEF34D1F92EF6C001BACDE /* homersimpson.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +148,10 @@
 			files = (
 				913A13B31F7DE5280021EC02 /* LaunchScreen.storyboard in Resources */,
 				913A13B01F7DE5280021EC02 /* Assets.xcassets in Resources */,
+				91FEF3521F93C05C001BACDE /* burns.jpg in Resources */,
+				91FEF3511F93C045001BACDE /* marge.jpg in Resources */,
 				913A13AE1F7DE5280021EC02 /* Main.storyboard in Resources */,
+				91FEF34E1F92F2B4001BACDE /* homersimpson.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FEF3451F848BC4001BACDE /* DetailViewController.swift in Sources */,
+				91FEF34B1F85EF03001BACDE /* Simpson.swift in Sources */,
 				913A13AB1F7DE5280021EC02 /* ViewController.swift in Sources */,
 				913A13A91F7DE5280021EC02 /* AppDelegate.swift in Sources */,
 			);
