@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var mTableView: UITableView!
     
     var mSimpsonList = [Simpson]()
+    var selectedSimpson = Simpson()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         mTableView.delegate = self
         mTableView.dataSource = self
+
+        
+        
         
         let homer = Simpson()
         homer.name = "Homero Simpson"
@@ -60,6 +64,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = UITableViewCell()
         cell.textLabel?.text = mSimpsonList[indexPath.row].name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedSimpson = mSimpsonList[indexPath.row]
+        self.performSegue(withIdentifier: "showDetailVC", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "showDetailVC"){
+            let destination = segue.destination as! DetailViewController
+            destination.simpson = selectedSimpson
+        }
     }
 
 }

@@ -14,10 +14,16 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var mTitleLabel: UILabel!
     @IBOutlet weak var mDetailLabel: UILabel!
     
+    var simpson = Simpson()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        mTitleLabel.text = simpson.name
+        mDetailLabel.text = simpson.ocupation
+        mImageView.image = simpson.image
     }
 
     override func didReceiveMemoryWarning() {
